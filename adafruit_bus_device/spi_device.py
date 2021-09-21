@@ -66,7 +66,6 @@ class SPIDevice:
         self.phase = phase
         self.extra_clocks = extra_clocks
         self.chip_select = chip_select
-        self.cs_active_value = cs_active_value
         if self.chip_select:
             self.chip_select.switch_to_output(value=True)
 
